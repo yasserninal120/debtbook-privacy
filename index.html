@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الخصوصية - دفتر الديون | Privacy Policy - Debt Book</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=Inter:wght@400;500;600&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: #FAFAFA;
+            color: #1a1a1a;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 2px solid #1565C0;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1565C0;
+            margin-bottom: 8px;
+        }
+
+        .header .subtitle {
+            font-size: 15px;
+            color: #666;
+        }
+
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+
+        .lang-switch button {
+            padding: 8px 24px;
+            border: 2px solid #1565C0;
+            border-radius: 8px;
+            background: white;
+            color: #1565C0;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .lang-switch button.active {
+            background: #1565C0;
+            color: white;
+        }
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .section h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1565C0;
+            margin-bottom: 12px;
+        }
+
+        .section p, .section li {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .section ul {
+            padding-right: 24px;
+            padding-left: 24px;
+        }
+
+        .section li {
+            margin-bottom: 6px;
+        }
+
+        .footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+        }
+
+        .en { display: none; direction: ltr; text-align: left; }
+        .en ul { padding-right: 0; padding-left: 24px; }
+
+        body.show-en .ar { display: none; }
+        body.show-en .en { display: block; }
+
+        .effective-date {
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 32px;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 24px 16px; }
+            .header h1 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📒 دفتر الديون — Debt Book</h1>
+            <div class="subtitle">سياسة الخصوصية | Privacy Policy</div>
+        </div>
+
+        <div class="lang-switch">
+            <button class="active" onclick="showAr()">العربية</button>
+            <button id="enBtn" onclick="showEn()">English</button>
+        </div>
+
+        <!-- ========== ARABIC ========== -->
+        <div class="ar">
+            <div class="effective-date">تاريخ السريان: 12 مايو 2026</div>
+
+            <div class="section">
+                <h2>مقدمة</h2>
+                <p>مرحباً بك في تطبيق "دفتر الديون". نحن نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية. توضّح هذه السياسة كيف يتعامل التطبيق مع معلوماتك.</p>
+            </div>
+
+            <div class="section">
+                <h2>البيانات التي يجمعها التطبيق</h2>
+                <p>يقوم التطبيق بتخزين البيانات التالية <strong>محلياً على جهازك فقط</strong>:</p>
+                <ul>
+                    <li>أسماء وأرقام هواتف الزبائن والموزعين</li>
+                    <li>سجلات الفواتير والدفعات والمبالغ</li>
+                    <li>اسم المحل التجاري</li>
+                    <li>إعدادات التطبيق (العملة، الوضع الليلي، إلخ)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>تخزين البيانات</h2>
+                <p>جميع البيانات تُخزَّن محلياً على جهازك باستخدام قاعدة بيانات SQLite. لا يتم إرسال أي بيانات إلى خوادم خارجية تلقائياً.</p>
+            </div>
+
+            <div class="section">
+                <h2>النسخ الاحتياطي عبر تلغرام</h2>
+                <p>يوفر التطبيق ميزة اختيارية للنسخ الاحتياطي عبر بوت تلغرام. عند تفعيل هذه الميزة:</p>
+                <ul>
+                    <li>يتم إرسال نسخة من بياناتك (بصيغة JSON) إلى بوت تلغرام خاص بالمطور</li>
+                    <li>هذه الميزة اختيارية بالكامل ويمكنك تعطيلها في أي وقت</li>
+                    <li>تُستخدم فقط لغرض حفظ نسخة احتياطية من بياناتك</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>الأمان</h2>
+                <p>يوفر التطبيق طبقات حماية متعددة:</p>
+                <ul>
+                    <li>قفل بالبصمة أو التعرف على الوجه (Face ID)</li>
+                    <li>رمز PIN مشفّر بخوارزمية SHA-256</li>
+                    <li>نظام تفعيل لحماية التطبيق من الاستخدام غير المرخص</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>أذونات التطبيق</h2>
+                <ul>
+                    <li><strong>التخزين:</strong> لحفظ النسخ الاحتياطية وملفات PDF</li>
+                    <li><strong>الإنترنت:</strong> لإرسال النسخ الاحتياطية عبر تلغرام ونظام التفعيل</li>
+                    <li><strong>البصمة:</strong> للمصادقة البيومترية</li>
+                    <li><strong>الإشعارات:</strong> لتنبيهات الديون المتأخرة</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>مشاركة البيانات مع أطراف ثالثة</h2>
+                <p>لا نشارك بياناتك مع أي طرف ثالث. لا يحتوي التطبيق على إعلانات أو أدوات تتبع أو تحليلات خارجية.</p>
+            </div>
+
+            <div class="section">
+                <h2>حقوق المستخدم</h2>
+                <p>يمكنك في أي وقت:</p>
+                <ul>
+                    <li>حذف جميع بياناتك بإلغاء تثبيت التطبيق</li>
+                    <li>تصدير بياناتك عبر النسخ الاحتياطي</li>
+                    <li>تعطيل النسخ التلقائي عبر تلغرام</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>التعديلات على السياسة</h2>
+                <p>قد نقوم بتحديث هذه السياسة من وقت لآخر. سيتم نشر أي تعديلات على هذه الصفحة مع تحديث تاريخ السريان.</p>
+            </div>
+
+            <div class="section">
+                <h2>التواصل</h2>
+                <p>لأي استفسارات حول سياسة الخصوصية، يمكنك التواصل معنا عبر:</p>
+                <ul>
+                    <li>واتساب: <a href="https://wa.me/963956030136" style="color:#1565C0">+963 956 030 136</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ========== ENGLISH ========== -->
+        <div class="en">
+            <div class="effective-date">Effective Date: May 12, 2026</div>
+
+            <div class="section">
+                <h2>Introduction</h2>
+                <p>Welcome to "Debt Book" (دفتر الديون). We respect your privacy and are committed to protecting your personal data. This policy explains how the app handles your information.</p>
+            </div>
+
+            <div class="section">
+                <h2>Data We Collect</h2>
+                <p>The app stores the following data <strong>locally on your device only</strong>:</p>
+                <ul>
+                    <li>Customer and supplier names and phone numbers</li>
+                    <li>Invoice records, payments, and amounts</li>
+                    <li>Store/business name</li>
+                    <li>App settings (currency, dark mode, etc.)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Data Storage</h2>
+                <p>All data is stored locally on your device using an SQLite database. No data is automatically sent to external servers.</p>
+            </div>
+
+            <div class="section">
+                <h2>Telegram Backup</h2>
+                <p>The app provides an optional backup feature via a Telegram bot. When this feature is enabled:</p>
+                <ul>
+                    <li>A copy of your data (in JSON format) is sent to a developer-managed Telegram bot</li>
+                    <li>This feature is entirely optional and can be disabled at any time</li>
+                    <li>It is used solely for the purpose of backing up your data</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Security</h2>
+                <p>The app provides multiple layers of protection:</p>
+                <ul>
+                    <li>Fingerprint or Face ID authentication</li>
+                    <li>PIN code encrypted with SHA-256</li>
+                    <li>Activation system to prevent unauthorized use</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>App Permissions</h2>
+                <ul>
+                    <li><strong>Storage:</strong> To save backups and PDF files</li>
+                    <li><strong>Internet:</strong> For Telegram backups and activation system</li>
+                    <li><strong>Biometrics:</strong> For biometric authentication</li>
+                    <li><strong>Notifications:</strong> For overdue debt alerts</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Third-Party Sharing</h2>
+                <p>We do not share your data with any third party. The app contains no ads, tracking tools, or external analytics.</p>
+            </div>
+
+            <div class="section">
+                <h2>Your Rights</h2>
+                <p>You can at any time:</p>
+                <ul>
+                    <li>Delete all your data by uninstalling the app</li>
+                    <li>Export your data via the backup feature</li>
+                    <li>Disable automatic Telegram backup</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Policy Updates</h2>
+                <p>We may update this policy from time to time. Any changes will be posted on this page with an updated effective date.</p>
+            </div>
+
+            <div class="section">
+                <h2>Contact Us</h2>
+                <p>For any questions about this privacy policy, you can reach us via:</p>
+                <ul>
+                    <li>WhatsApp: <a href="https://wa.me/963956030136" style="color:#1565C0">+963 956 030 136</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            جميع الحقوق محفوظة © 2026 | م. ياسر نينال
+            <br>All Rights Reserved © 2026 | Eng. Yasser Ninal
+        </div>
+    </div>
+
+    <script>
+        function showEn() {
+            document.body.classList.add('show-en');
+            document.documentElement.lang = 'en';
+            document.documentElement.dir = 'ltr';
+            document.getElementById('enBtn').classList.add('active');
+            document.getElementById('enBtn').previousElementSibling.classList.remove('active');
+        }
+        function showAr() {
+            document.body.classList.remove('show-en');
+            document.documentElement.lang = 'ar';
+            document.documentElement.dir = 'rtl';
+            document.getElementById('enBtn').classList.remove('active');
+            document.getElementById('enBtn').previousElementSibling.classList.add('active');
+        }
+    </script>
+</body>
+</html>
